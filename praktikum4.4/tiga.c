@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void main()
+{
+    // deret bilangan prima
+    int bil,i,j,status;
+    printf("Masukkan bilangan : ");
+    scanf("%d",&bil);
+    for(i=1; i<=bil; i++){
+        if(i==2){
+            printf("%d ", i);
+        }else{
+            for(j=2;j<i;j++){
+                if(i%j==0)
+                {
+                    status=0;
+                    break;
+                }else{
+                    status=1;
+                }
+            }
+            if(status==1){
+                printf("%d ", i);
+            }
+        }
+    }
+}
