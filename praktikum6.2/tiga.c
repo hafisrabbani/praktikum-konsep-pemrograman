@@ -13,7 +13,6 @@ void hitungsudut(){
         sudut[i]=j*=30;
     }
 }
-
 void main()
 {
     int i;

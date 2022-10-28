@@ -1,8 +1,5 @@
 #include <stdio.h>
-
-int data[100];
-int size;
-
+int data[100],size;
 void input(){
     int i;
     printf("Masukkan banyaknya data: ");
@@ -12,7 +9,6 @@ void input(){
         scanf("%d",&data[i]);
     }
 }
-
 int findMax(){
     int i,max;
     max=data[0];
@@ -23,9 +19,7 @@ int findMax(){
     }
     return max;
 }
-
-void main()
-{
+void main(){
     input();
     printf("Nilai maksimum adalah: %d",findMax());
 }

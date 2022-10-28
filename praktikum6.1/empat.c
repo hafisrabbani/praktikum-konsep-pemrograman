@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 void main()
 {
     int max,i,size;
-
     printf("Masukan Banyak data : ");
     scanf("%d",&size);
     int bil[size];
@@ -18,6 +16,5 @@ void main()
             }
         }
     }
-
     printf("Bilangan terbesar adalah %d",max);
 }
